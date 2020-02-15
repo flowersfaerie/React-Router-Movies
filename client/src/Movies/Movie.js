@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+// import MovieCard from './MovieCard';
 
 const Movie = (props) => {
   const [movie, setMovie] = useState();
@@ -30,6 +31,8 @@ const Movie = (props) => {
   if (!movie) {
     return <div>Loading movie information...</div>;
   }
+
+  // <MovieCard />
 
   const { title, director, metascore, stars } = movie;
   return (
